@@ -31,7 +31,7 @@ form .field{
 }
 
 form .field.shake{
-    animation: shake 0.3s ease-in-out infinite;
+    animation: shake 0.3s ease-in-out;
 }
 
 @keyframes shake {
@@ -59,6 +59,10 @@ form input{
     border-radius: 5px;
     border: 1px solid #bfbfbf;
     border-bottom-width: 2px;
+}
+
+form .field.error input{
+    border-color: #dc3545;
 }
 
 form input::placeholder{
@@ -92,6 +96,10 @@ form .field .error_txt{
 
 form .field .error{
     display: none;
+}
+
+form .field.error .error{
+    display: block;
 }
 
 form .pass_link{
